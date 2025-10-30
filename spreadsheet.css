@@ -1,13 +1,45 @@
 :root {
   --primaryColor: rgb(235, 235, 255);
+  --borderColor: rgb(120, 90, 90);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .topHeader {
-  background-color: var(--primaryColor);
-  text-align: left;
+  text-align: center;
   font-size: 40px;
+  font-weight: bold;
+}
+
+.titleText {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.coloredBox {
+  background-color: var(--primaryColor);
+  padding: 10px 20px;
 }
 
 .dropShadow {
   box-shadow: 0px 7px 5px -5px;
+}
+
+.contactBar {
+  text-align: center;
+}
+
+.contactItem:first-child {
+  padding-left: 4px;
+  border-left: 2px solid var(--borderColor);
+}
+.contactItem:last-child {
+  padding-right: 4px;
+  border-right: 2px solid var(--borderColor);
+}
+.contactItem + .contactItem {
+  padding-left: 4px;
+  border-left: 2px solid var(--borderColor);
 }
